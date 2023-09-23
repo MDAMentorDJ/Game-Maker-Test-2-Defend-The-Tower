@@ -1,19 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "gameManager",
+  "name": "triangleEnemy",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":27,"eventType":5,"isDnD":true,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":13,"eventType":5,"isDnD":true,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"enemyBehavior","path":"objects/enemyBehavior/enemyBehavior.yy",},"propertyId":{"name":"enemyDamage","path":"objects/enemyBehavior/enemyBehavior.yy",},"value":"5",},
+  ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "enemyBehavior",
+    "path": "objects/enemyBehavior/enemyBehavior.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,9 +33,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Gear",
-    "path": "sprites/Gear/Gear.yy",
+    "name": "Triangle",
+    "path": "sprites/Triangle/Triangle.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
