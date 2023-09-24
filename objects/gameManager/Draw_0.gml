@@ -14,8 +14,8 @@ if(inCombat == true)
 	/// @DnDArgument : "x" "room_width / 2"
 	/// @DnDArgument : "y" "32"
 	/// @DnDArgument : "caption" ""Wave: ""
-	/// @DnDArgument : "var" "waveNumber"
-	draw_text(room_width / 2, 32, string("Wave: ") + string(waveNumber));
+	/// @DnDArgument : "var" "string_concat(waveNumber, " / 25")"
+	draw_text(room_width / 2, 32, string("Wave: ") + string(string_concat(waveNumber, " / 25")));
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Value
 	/// @DnDVersion : 1

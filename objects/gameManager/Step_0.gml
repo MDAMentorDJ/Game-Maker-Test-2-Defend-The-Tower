@@ -46,6 +46,38 @@ if(remainingEnemies == 0)
 	/// @DnDArgument : "var" "remainingEnemies"
 	remainingEnemies = -1;
 
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 6860AFD0
+	/// @DnDParent : 4E920EC1
+	/// @DnDArgument : "var" "waveNumber"
+	/// @DnDArgument : "value" "25"
+	if(waveNumber == 25)
+	{
+		/// @DnDAction : YoYo Games.Instances.Set_Alarm
+		/// @DnDVersion : 1
+		/// @DnDHash : 65689AAF
+		/// @DnDParent : 6860AFD0
+		/// @DnDArgument : "steps" "room_speed"
+		/// @DnDArgument : "alarm" "1"
+		alarm_set(1, room_speed);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 1EFDB90C
+		/// @DnDComment : The player won!
+		/// @DnDParent : 6860AFD0
+		/// @DnDArgument : "expr" "1"
+		/// @DnDArgument : "var" "playerWin"
+		playerWin = 1;
+	
+		/// @DnDAction : YoYo Games.Common.Exit_Event
+		/// @DnDVersion : 1
+		/// @DnDHash : 6522E958
+		/// @DnDParent : 6860AFD0
+		exit;
+	}
+
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 7015145B

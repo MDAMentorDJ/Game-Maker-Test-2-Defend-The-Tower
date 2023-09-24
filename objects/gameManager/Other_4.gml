@@ -27,6 +27,14 @@ if(currentRoom == gameRoom)
 	/// @DnDSaveInfo : "soundid" "menuMusic"
 	audio_stop_sound(menuMusic);
 
+	/// @DnDAction : YoYo Games.Audio.Stop_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 205836BA
+	/// @DnDParent : 5C284C79
+	/// @DnDArgument : "soundid" "backgroundMusic"
+	/// @DnDSaveInfo : "soundid" "backgroundMusic"
+	audio_stop_sound(backgroundMusic);
+
 	/// @DnDAction : YoYo Games.Audio.Play_Audio
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 1A1E3A18
@@ -44,6 +52,15 @@ if(currentRoom == gameRoom)
 	/// @DnDParent : 5C284C79
 	/// @DnDArgument : "steps" "2 * room_speed"
 	alarm_set(0, 2 * room_speed);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 48DA8663
+	/// @DnDComment : The player hasn't won yet
+	/// @DnDParent : 5C284C79
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "playerWin"
+	playerWin = false;
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
