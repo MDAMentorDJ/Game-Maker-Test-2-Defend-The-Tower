@@ -1,3 +1,20 @@
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 38BB55AF
+/// @DnDApplyTo : {gameManager}
+/// @DnDArgument : "var" "inCombat"
+/// @DnDArgument : "not" "1"
+/// @DnDArgument : "value" "true"
+with(gameManager) var l38BB55AF_0 = inCombat == true;
+if(!l38BB55AF_0)
+{
+	/// @DnDAction : YoYo Games.Common.Exit_Event
+	/// @DnDVersion : 1
+	/// @DnDHash : 6B500C8A
+	/// @DnDParent : 38BB55AF
+	exit;
+}
+
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 740A74AF

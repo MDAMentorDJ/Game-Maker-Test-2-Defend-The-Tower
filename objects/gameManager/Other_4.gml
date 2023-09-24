@@ -16,6 +16,38 @@ if(currentRoom == gameRoom)
 	/// @DnDVersion : 1
 	/// @DnDHash : 24870163
 	/// @DnDParent : 5C284C79
-	/// @DnDArgument : "steps" "spawnRate"
-	alarm_set(0, spawnRate);
+	/// @DnDArgument : "steps" "spawnRate * room_speed"
+	alarm_set(0, spawnRate * room_speed);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 41DF05EF
+	/// @DnDParent : 5C284C79
+	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "var" "waveNumber"
+	waveNumber = 1;
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 675AF3AF
+	/// @DnDParent : 5C284C79
+	/// @DnDArgument : "expr" "true"
+	/// @DnDArgument : "var" "inCombat"
+	inCombat = true;
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 7FDF530A
+	/// @DnDParent : 5C284C79
+	/// @DnDArgument : "expr" "5"
+	/// @DnDArgument : "var" "enemiesToSpawn"
+	enemiesToSpawn = 5;
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 01DDA3BA
+	/// @DnDParent : 5C284C79
+	/// @DnDArgument : "expr" "enemiesToSpawn"
+	/// @DnDArgument : "var" "remainingEnemies"
+	remainingEnemies = enemiesToSpawn;
 }

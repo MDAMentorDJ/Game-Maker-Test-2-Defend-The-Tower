@@ -8,6 +8,8 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":true,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":true,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":true,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":true,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,7 +32,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawnRate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawnRate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"waveNumber","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"inCombat","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"remainingEnemies","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemiesToSpawn","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
   "spriteId": {
@@ -38,5 +44,5 @@
     "path": "sprites/Gear/Gear.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
