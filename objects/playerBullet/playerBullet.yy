@@ -7,7 +7,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"playerProjectileBehavior","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},"propertyId":{"name":"projectileDamage","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},"value":"5",},
+  ],
   "parent": {
     "name": "Player",
     "path": "folders/Objects/Player.yy",

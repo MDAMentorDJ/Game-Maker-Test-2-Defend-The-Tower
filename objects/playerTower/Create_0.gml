@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 44B46729
+/// @DnDArgument : "expr" "maxHealth"
+/// @DnDArgument : "var" "currentHealth"
+currentHealth = maxHealth;
+
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 11FC1F59
