@@ -3,9 +3,16 @@
 /// @DnDHash : 1A38E658
 event_inherited();
 
-/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+/// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
-/// @DnDHash : 51EF6EA8
-/// @DnDArgument : "room" "gameRoom"
-/// @DnDSaveInfo : "room" "gameRoom"
-room_goto(gameRoom);
+/// @DnDHash : 558E473D
+/// @DnDApplyTo : {gameManager}
+/// @DnDArgument : "function" "nextWave"
+with(gameManager) {
+	nextWave();
+}
+
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 692DAAED
+instance_destroy();

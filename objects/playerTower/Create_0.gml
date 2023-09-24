@@ -55,3 +55,17 @@ function takeDamage(amount)
 		currentHealth = 0;
 	}
 }
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 2CEFBCE6
+/// @DnDArgument : "funcName" "beginCombat"
+function beginCombat() 
+{
+	/// @DnDAction : YoYo Games.Instances.Set_Alarm
+	/// @DnDVersion : 1
+	/// @DnDHash : 0FBFA072
+	/// @DnDParent : 2CEFBCE6
+	/// @DnDArgument : "steps" "bulletFireRate"
+	alarm_set(0, bulletFireRate);
+}

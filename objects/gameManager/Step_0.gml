@@ -35,6 +35,14 @@ if(remainingEnemies == 0)
 	/// @DnDArgument : "var" "inCombat"
 	inCombat = false;
 
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 552AF47F
+	/// @DnDParent : 4E920EC1
+	/// @DnDArgument : "expr" "-1"
+	/// @DnDArgument : "var" "remainingEnemies"
+	remainingEnemies = -1;
+
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 7015145B

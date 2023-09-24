@@ -51,12 +51,26 @@ if(currentHealth == 0)
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 0D2824B8
+	/// @DnDComment : Do some slowmo
 	/// @DnDApplyTo : {enemyBehavior}
 	/// @DnDParent : 574EE4AC
 	/// @DnDArgument : "expr" "15"
 	/// @DnDArgument : "var" "room_speed"
 	with(enemyBehavior) {
 	room_speed = 15;
+	
+	}
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 07634F30
+	/// @DnDComment : Leave Combat
+	/// @DnDApplyTo : {gameManager}
+	/// @DnDParent : 574EE4AC
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "inCombat"
+	with(gameManager) {
+	inCombat = false;
 	
 	}
 

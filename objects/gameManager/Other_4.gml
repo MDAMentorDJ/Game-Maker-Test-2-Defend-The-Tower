@@ -16,8 +16,8 @@ if(currentRoom == gameRoom)
 	/// @DnDVersion : 1
 	/// @DnDHash : 24870163
 	/// @DnDParent : 5C284C79
-	/// @DnDArgument : "steps" "spawnRate * room_speed"
-	alarm_set(0, spawnRate * room_speed);
+	/// @DnDArgument : "steps" "4 * room_speed"
+	alarm_set(0, 4 * room_speed);
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1

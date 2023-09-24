@@ -6,6 +6,18 @@
 /// @DnDArgument : "arg" "enemyDamage"
 playerTower.takeDamage(enemyDamage);
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 796C2B18
+/// @DnDApplyTo : {gameManager}
+/// @DnDArgument : "expr" "-1"
+/// @DnDArgument : "expr_relative" "1"
+/// @DnDArgument : "var" "remainingEnemies"
+with(gameManager) {
+remainingEnemies += -1;
+
+}
+
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 04B4DAED
