@@ -28,6 +28,83 @@ if(!(currentRoom == gameRoom))
 /// @DnDArgument : "var" "remainingEnemies"
 if(remainingEnemies == 0)
 {
+	/// @DnDAction : YoYo Games.Instances.If_Instance_Exists
+	/// @DnDVersion : 1
+	/// @DnDHash : 77563FC2
+	/// @DnDComment : If the player has been killed we don't want to$(13_10)advance to upgrade selection
+	/// @DnDParent : 4E920EC1
+	/// @DnDArgument : "obj" "playerTower"
+	/// @DnDArgument : "not" "1"
+	/// @DnDSaveInfo : "obj" "playerTower"
+	var l77563FC2_0 = false;
+	l77563FC2_0 = instance_exists(playerTower);
+	if(!l77563FC2_0)
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 0809E2BE
+		/// @DnDComment : Exit combat
+		/// @DnDParent : 77563FC2
+		/// @DnDArgument : "expr" "false"
+		/// @DnDArgument : "var" "inCombat"
+		inCombat = false;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 42AF94CF
+		/// @DnDComment : Set this to -1 so we don't keep trying to exit combat
+		/// @DnDParent : 77563FC2
+		/// @DnDArgument : "expr" "-1"
+		/// @DnDArgument : "var" "remainingEnemies"
+		remainingEnemies = -1;
+	
+		/// @DnDAction : YoYo Games.Common.Exit_Event
+		/// @DnDVersion : 1
+		/// @DnDHash : 174585CF
+		/// @DnDParent : 77563FC2
+		exit;
+	}
+
+	/// @DnDAction : YoYo Games.Common.Else
+	/// @DnDVersion : 1
+	/// @DnDHash : 0B9C3922
+	/// @DnDParent : 4E920EC1
+	else
+	{
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 08AB0940
+		/// @DnDComment : If the player does exist but is dead
+		/// @DnDParent : 0B9C3922
+		/// @DnDArgument : "var" "playerTower.currentHealth"
+		if(playerTower.currentHealth == 0)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 17355C18
+			/// @DnDComment : Exit combat
+			/// @DnDParent : 08AB0940
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "inCombat"
+			inCombat = false;
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 2F47A07A
+			/// @DnDComment : Set this to -1 so we don't keep trying to exit combat
+			/// @DnDParent : 08AB0940
+			/// @DnDArgument : "expr" "-1"
+			/// @DnDArgument : "var" "remainingEnemies"
+			remainingEnemies = -1;
+		
+			/// @DnDAction : YoYo Games.Common.Exit_Event
+			/// @DnDVersion : 1
+			/// @DnDHash : 11190866
+			/// @DnDParent : 08AB0940
+			exit;
+		}
+	}
+
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 70622012
