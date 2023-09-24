@@ -7,8 +7,8 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"upgradeButton","path":"objects/upgradeButton/upgradeButton.yy",},"propertyId":{"name":"upgradeName","path":"objects/upgradeButton/upgradeButton.yy",},"value":"Health",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"upgradeButton","path":"objects/upgradeButton/upgradeButton.yy",},"propertyId":{"name":"upgradeValue","path":"objects/upgradeButton/upgradeButton.yy",},"value":"+3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"upgradeButton","path":"objects/upgradeButton/upgradeButton.yy",},"propertyId":{"name":"upgradeName","path":"objects/upgradeButton/upgradeButton.yy",},"value":"Attack Speed",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"upgradeButton","path":"objects/upgradeButton/upgradeButton.yy",},"propertyId":{"name":"upgradeValue","path":"objects/upgradeButton/upgradeButton.yy",},"value":"+1/s",},
   ],
   "parent": {
     "name": "Upgrades",

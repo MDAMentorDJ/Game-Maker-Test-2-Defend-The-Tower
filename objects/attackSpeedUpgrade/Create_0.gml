@@ -16,9 +16,9 @@ function applyUpgrade()
 	/// @DnDParent : 32F5EE8E
 	/// @DnDArgument : "expr" "1"
 	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "var" "maxHealth"
+	/// @DnDArgument : "var" "bulletFireRate"
 	with(playerTower) {
-	maxHealth += 1;
+	bulletFireRate += 1;
 	
 	}
 }

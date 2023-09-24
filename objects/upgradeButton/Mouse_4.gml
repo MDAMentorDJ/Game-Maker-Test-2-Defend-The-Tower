@@ -25,3 +25,10 @@ image_alpha = 1;
 /// @DnDComment : Also show the next wave button
 /// @DnDApplyTo : {nextWave}
 with(nextWave) image_alpha = 1;
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 677AE9BC
+/// @DnDArgument : "soundid" "buttonSound"
+/// @DnDSaveInfo : "soundid" "buttonSound"
+audio_play_sound(buttonSound, 0, 0, 1.0, undefined, 1.0);

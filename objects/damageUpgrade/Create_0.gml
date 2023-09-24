@@ -14,11 +14,11 @@ function applyUpgrade()
 	/// @DnDHash : 03DF2AD1
 	/// @DnDApplyTo : {playerTower}
 	/// @DnDParent : 36446DA0
-	/// @DnDArgument : "expr" "3"
+	/// @DnDArgument : "expr" "1"
 	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "var" "maxHealth"
+	/// @DnDArgument : "var" "bulletDamage"
 	with(playerTower) {
-	maxHealth += 3;
+	bulletDamage += 1;
 	
 	}
 }

@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 5DBB908D
+/// @DnDArgument : "soundid" "laserSound"
+/// @DnDSaveInfo : "soundid" "laserSound"
+audio_play_sound(laserSound, 0, 0, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 2D3DCE74
