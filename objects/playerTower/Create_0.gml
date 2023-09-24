@@ -71,7 +71,24 @@ function beginCombat()
 	/// @DnDAction : YoYo Games.Instances.Set_Alarm
 	/// @DnDVersion : 1
 	/// @DnDHash : 0FBFA072
+	/// @DnDComment : Start firing right away
 	/// @DnDParent : 2CEFBCE6
-	/// @DnDArgument : "steps" "bulletFireRate"
-	alarm_set(0, bulletFireRate);
+	/// @DnDArgument : "steps" "1"
+	alarm_set(0, 1);
+}
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 33C4272E
+/// @DnDComment : Full heal the player
+/// @DnDArgument : "funcName" "fullHeal"
+function fullHeal() 
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 76E7B6F5
+	/// @DnDParent : 33C4272E
+	/// @DnDArgument : "expr" "maxHealth"
+	/// @DnDArgument : "var" "currentHealth"
+	currentHealth = maxHealth;
 }

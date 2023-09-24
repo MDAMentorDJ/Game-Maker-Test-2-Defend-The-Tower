@@ -52,6 +52,7 @@ if(currentRoom == gameRoom)
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 01DDA3BA
+	/// @DnDComment : Update the # of enemies left to kill
 	/// @DnDParent : 5C284C79
 	/// @DnDArgument : "expr" "enemiesToSpawn"
 	/// @DnDArgument : "var" "remainingEnemies"

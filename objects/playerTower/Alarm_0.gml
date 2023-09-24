@@ -29,6 +29,6 @@ instance_create_layer(x + 0, y + 0, "Instances", playerBullet);
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 5EAB3ABE
-/// @DnDComment : Set an alarm to fire the next bullet
-/// @DnDArgument : "steps" "bulletFireRate"
-alarm_set(0, bulletFireRate);
+/// @DnDComment : Set an alarm to fire the next bullet$(13_10)It's relative to the frame rate$(13_10)So if we're at 60 fps, and a firerate of 2$(13_10)Then fire every 30 frames
+/// @DnDArgument : "steps" "room_speed / bulletFireRate"
+alarm_set(0, room_speed / bulletFireRate);

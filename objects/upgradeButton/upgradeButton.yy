@@ -1,24 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "nextWave",
+  "name": "upgradeButton",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":true,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":true,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":true,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":true,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"gameButton","path":"objects/gameButton/gameButton.yy",},"propertyId":{"name":"buttonText","path":"objects/gameButton/gameButton.yy",},"value":"Next Wave",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "Game Room",
-    "path": "folders/Objects/UI/Game Room.yy",
+    "name": "UI",
+    "path": "folders/Objects/UI.yy",
   },
-  "parentObjectId": {
-    "name": "gameButton",
-    "path": "objects/gameButton/gameButton.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,12 +29,12 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"upgradeName","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"Name","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"upgradeValue","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"Value","varType":2,},
+  ],
   "solid": false,
-  "spriteId": {
-    "name": "_8pxBox",
-    "path": "sprites/_8pxBox/_8pxBox.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

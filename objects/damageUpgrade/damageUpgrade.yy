@@ -1,0 +1,45 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "damageUpgrade",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"upgradeButton","path":"objects/upgradeButton/upgradeButton.yy",},"propertyId":{"name":"upgradeName","path":"objects/upgradeButton/upgradeButton.yy",},"value":"Attack Speed",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"upgradeButton","path":"objects/upgradeButton/upgradeButton.yy",},"propertyId":{"name":"upgradeValue","path":"objects/upgradeButton/upgradeButton.yy",},"value":"+30%",},
+  ],
+  "parent": {
+    "name": "Upgrades",
+    "path": "folders/Objects/UI/Upgrades.yy",
+  },
+  "parentObjectId": {
+    "name": "upgradeButton",
+    "path": "objects/upgradeButton/upgradeButton.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "_8pxBox",
+    "path": "sprites/_8pxBox/_8pxBox.yy",
+  },
+  "spriteMaskId": {
+    "name": "_8pxBox",
+    "path": "sprites/_8pxBox/_8pxBox.yy",
+  },
+  "visible": true,
+}

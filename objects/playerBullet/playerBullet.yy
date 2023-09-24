@@ -8,7 +8,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"playerProjectileBehavior","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},"propertyId":{"name":"projectileDamage","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},"value":"5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"playerProjectileBehavior","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},"propertyId":{"name":"projectileDamage","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Player",

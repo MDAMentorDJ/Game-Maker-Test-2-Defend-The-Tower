@@ -5,6 +5,13 @@
 /// @DnDArgument : "arg" "cr_cross"
 window_set_cursor(cr_cross);
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6007B73A
+/// @DnDArgument : "expr" "pointer_null"
+/// @DnDArgument : "var" "chosenUpgrade"
+chosenUpgrade = pointer_null;
+
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 0926CFA7
@@ -56,6 +63,42 @@ function nextWave()
 	/// @DnDParent : 0926CFA7
 	/// @DnDArgument : "steps" "room_speed * 2"
 	alarm_set(0, room_speed * 2);
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 7DB62C71
+	/// @DnDComment : Apply the upgrade the player chose
+	/// @DnDParent : 0926CFA7
+	/// @DnDArgument : "function" "chosenUpgrade.applyUpgrade"
+	chosenUpgrade.applyUpgrade();
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 344151A3
+	/// @DnDComment : Clear the chosen upgrade
+	/// @DnDParent : 0926CFA7
+	/// @DnDArgument : "expr" "pointer_null"
+	/// @DnDArgument : "var" "chosenUpgrade"
+	chosenUpgrade = pointer_null;
+
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 43B7686D
+	/// @DnDComment : Destory the upgrade buttons
+	/// @DnDApplyTo : {upgradeButton}
+	/// @DnDParent : 0926CFA7
+	with(upgradeButton) instance_destroy();
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 5D43FA7E
+	/// @DnDComment : Heal the player
+	/// @DnDApplyTo : {playerTower}
+	/// @DnDParent : 0926CFA7
+	/// @DnDArgument : "function" "fullHeal"
+	with(playerTower) {
+		fullHeal();
+	}
 
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
@@ -198,4 +241,50 @@ function spawnEnemy(enemyType)
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "enemiesToSpawn"
 	enemiesToSpawn += -1;
+}
+
+/// @DnDAction : YoYo Games.Common.Function
+/// @DnDVersion : 1
+/// @DnDHash : 3B6C227A
+/// @DnDArgument : "funcName" "createRandomPowerUp"
+/// @DnDArgument : "arg" "x_offset"
+function createRandomPowerUp(x_offset) 
+{
+	/// @DnDAction : YoYo Games.Random.Choose
+	/// @DnDVersion : 1
+	/// @DnDHash : 4179AD5A
+	/// @DnDComment : Pick a random upgrade
+	/// @DnDInput : 3
+	/// @DnDParent : 3B6C227A
+	/// @DnDArgument : "var" "powerUpObj"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "option" "attackSpeedUpgrade"
+	/// @DnDArgument : "option_1" "damageUpgrade"
+	/// @DnDArgument : "option_2" "healthUpgrade"
+	var powerUpObj = choose(attackSpeedUpgrade, damageUpgrade, healthUpgrade);
+
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 0884DF6E
+	/// @DnDComment : Create the upgrade box
+	/// @DnDParent : 3B6C227A
+	/// @DnDArgument : "xpos" "400 + x_offset"
+	/// @DnDArgument : "ypos" "205"
+	/// @DnDArgument : "var" "newPowerUp"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "objectid" "powerUpObj"
+	var newPowerUp = instance_create_layer(400 + x_offset, 205, "Instances", powerUpObj);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 497EA751
+	/// @DnDComment : Set it's size
+	/// @DnDInput : 2
+	/// @DnDParent : 3B6C227A
+	/// @DnDArgument : "expr" "2.8"
+	/// @DnDArgument : "expr_1" "3.2"
+	/// @DnDArgument : "var" "newPowerUp.image_xscale"
+	/// @DnDArgument : "var_1" "newPowerUp.image_yscale"
+	newPowerUp.image_xscale = 2.8;
+	newPowerUp.image_yscale = 3.2;
 }
