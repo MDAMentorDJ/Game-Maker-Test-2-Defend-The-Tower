@@ -1,6 +1,7 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 38BB55AF
+/// @DnDComment : If we're not in combat, don't shoot
 /// @DnDApplyTo : {gameManager}
 /// @DnDArgument : "var" "inCombat"
 /// @DnDArgument : "not" "1"
@@ -28,5 +29,6 @@ instance_create_layer(x + 0, y + 0, "Instances", playerBullet);
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 5EAB3ABE
+/// @DnDComment : Set an alarm to fire the next bullet
 /// @DnDArgument : "steps" "bulletFireRate"
 alarm_set(0, bulletFireRate);

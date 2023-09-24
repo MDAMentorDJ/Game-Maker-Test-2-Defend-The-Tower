@@ -64,6 +64,7 @@ repeat(spawnAmount)
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 4D50C371
+	/// @DnDComment : For now just spawn the 1 type we have
 	/// @DnDParent : 22AFF34B
 	/// @DnDArgument : "function" "spawnEnemy"
 	/// @DnDArgument : "arg" "triangleEnemy"
@@ -73,5 +74,6 @@ repeat(spawnAmount)
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
 /// @DnDHash : 073B8ACD
+/// @DnDComment : Set an alarm to spawn the next enemy
 /// @DnDArgument : "steps" "spawnRate * room_speed"
 alarm_set(0, spawnRate * room_speed);

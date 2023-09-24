@@ -24,12 +24,14 @@ if(!(currentRoom == gameRoom))
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4E920EC1
+/// @DnDComment : If the player killed all the enemies
 /// @DnDArgument : "var" "remainingEnemies"
 if(remainingEnemies == 0)
 {
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 70622012
+	/// @DnDComment : Exit combat
 	/// @DnDParent : 4E920EC1
 	/// @DnDArgument : "expr" "false"
 	/// @DnDArgument : "var" "inCombat"
@@ -38,6 +40,7 @@ if(remainingEnemies == 0)
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 552AF47F
+	/// @DnDComment : Set this to -1 so we don't keep trying to exit combat
 	/// @DnDParent : 4E920EC1
 	/// @DnDArgument : "expr" "-1"
 	/// @DnDArgument : "var" "remainingEnemies"
@@ -46,6 +49,7 @@ if(remainingEnemies == 0)
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 7015145B
+	/// @DnDComment : Create the next wave button
 	/// @DnDParent : 4E920EC1
 	/// @DnDArgument : "xpos" "800"
 	/// @DnDArgument : "ypos" "736"
@@ -56,6 +60,7 @@ if(remainingEnemies == 0)
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 14FD862D
+	/// @DnDComment : Set it's x scale so it looks good
 	/// @DnDApplyTo : {nextWave}
 	/// @DnDParent : 4E920EC1
 	/// @DnDArgument : "expr" "4.2"

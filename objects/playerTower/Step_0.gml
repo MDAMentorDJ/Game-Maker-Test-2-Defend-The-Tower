@@ -1,12 +1,14 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 574EE4AC
+/// @DnDComment : If the player dies
 /// @DnDArgument : "var" "currentHealth"
 if(currentHealth == 0)
 {
 	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
 	/// @DnDHash : 4E760E58
+	/// @DnDComment : Explode the player
 	/// @DnDParent : 574EE4AC
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y_relative" "1"
@@ -16,6 +18,7 @@ if(currentHealth == 0)
 	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
 	/// @DnDHash : 366A07C5
+	/// @DnDComment : Explode a second time$(13_10)This is needed because for some reason$(13_10)The first particle effect doesn't render$(13_10)(bug?)
 	/// @DnDParent : 574EE4AC
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y_relative" "1"

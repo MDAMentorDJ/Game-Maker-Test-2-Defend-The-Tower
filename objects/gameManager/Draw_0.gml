@@ -1,6 +1,7 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 08E823E4
+/// @DnDComment : If we're in combat
 /// @DnDArgument : "var" "inCombat"
 /// @DnDArgument : "value" "true"
 if(inCombat == true)
@@ -8,6 +9,7 @@ if(inCombat == true)
 	/// @DnDAction : YoYo Games.Drawing.Draw_Value
 	/// @DnDVersion : 1
 	/// @DnDHash : 620AD7E4
+	/// @DnDComment : Render the wave and enemy count
 	/// @DnDParent : 08E823E4
 	/// @DnDArgument : "x" "room_width / 2"
 	/// @DnDArgument : "y" "32"

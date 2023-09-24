@@ -8,6 +8,7 @@ window_set_cursor(cr_cross);
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 0926CFA7
+/// @DnDComment : Called when starting the next wave after combat ends
 /// @DnDArgument : "funcName" "nextWave"
 function nextWave() 
 {
@@ -71,6 +72,7 @@ function nextWave()
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
 /// @DnDHash : 52FC5151
+/// @DnDComment : Spawns an enemy
 /// @DnDArgument : "funcName" "spawnEnemy"
 /// @DnDArgument : "arg" "enemyType"
 function spawnEnemy(enemyType) 
@@ -94,6 +96,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Random.Choose
 	/// @DnDVersion : 1
 	/// @DnDHash : 7DFC321B
+	/// @DnDComment : Decide which direction enemy will come from
 	/// @DnDInput : 4
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "var" "spawnSide"
@@ -107,6 +110,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4E5EB04D
+	/// @DnDComment : If coming from the left, move off screen to the left
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "var" "spawnSide"
 	/// @DnDArgument : "value" "1"
@@ -124,6 +128,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 7BB4824A
+	/// @DnDComment : Same with right
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "var" "spawnSide"
 	/// @DnDArgument : "value" "2"
@@ -141,6 +146,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 01C72D09
+	/// @DnDComment : And if coming from above
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "var" "spawnSide"
 	/// @DnDArgument : "value" "3"
@@ -158,6 +164,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 2A586E26
+	/// @DnDComment : Or below
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "var" "spawnSide"
 	/// @DnDArgument : "value" "4"
@@ -175,6 +182,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 7E83F42C
+	/// @DnDComment : Create the enemy
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "xpos" "random_x"
 	/// @DnDArgument : "ypos" "random_y"
@@ -184,6 +192,7 @@ function spawnEnemy(enemyType)
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 60C79A35
+	/// @DnDComment : Update the enemy count
 	/// @DnDParent : 52FC5151
 	/// @DnDArgument : "expr" "-1"
 	/// @DnDArgument : "expr_relative" "1"
