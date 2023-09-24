@@ -31,9 +31,9 @@ draw_text(x + 0, y + -125, string(upgradeName) + "");
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 082CB38A
-/// @DnDArgument : "font" "titleFont"
-/// @DnDSaveInfo : "font" "titleFont"
-draw_set_font(titleFont);
+/// @DnDArgument : "font" "upgradeAmountFont"
+/// @DnDSaveInfo : "font" "upgradeAmountFont"
+draw_set_font(upgradeAmountFont);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1

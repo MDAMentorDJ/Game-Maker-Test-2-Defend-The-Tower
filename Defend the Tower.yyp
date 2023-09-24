@@ -68,6 +68,7 @@
     {"id":{"name":"enemyHit","path":"sounds/enemyHit/enemyHit.yy",},},
     {"id":{"name":"Bullet","path":"sprites/Bullet/Bullet.yy",},},
     {"id":{"name":"_8pxBox","path":"sprites/_8pxBox/_8pxBox.yy",},},
+    {"id":{"name":"upgradeAmountFont","path":"fonts/upgradeAmountFont/upgradeAmountFont.yy",},},
     {"id":{"name":"playAgainButton","path":"objects/playAgainButton/playAgainButton.yy",},},
     {"id":{"name":"playerProjectileBehavior","path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},},
     {"id":{"name":"nextWave","path":"objects/nextWave/nextWave.yy",},},

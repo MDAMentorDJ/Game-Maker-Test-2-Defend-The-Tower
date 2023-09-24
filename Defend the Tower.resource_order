@@ -43,6 +43,7 @@
     {"name":"enemyHit","order":48,"path":"sounds/enemyHit/enemyHit.yy",},
     {"name":"Bullet","order":3,"path":"sprites/Bullet/Bullet.yy",},
     {"name":"_8pxBox","order":1,"path":"sprites/_8pxBox/_8pxBox.yy",},
+    {"name":"upgradeAmountFont","order":3,"path":"fonts/upgradeAmountFont/upgradeAmountFont.yy",},
     {"name":"playAgainButton","order":2,"path":"objects/playAgainButton/playAgainButton.yy",},
     {"name":"playerProjectileBehavior","order":2,"path":"objects/playerProjectileBehavior/playerProjectileBehavior.yy",},
     {"name":"healthUpgrade","order":2,"path":"objects/healthUpgrade/healthUpgrade.yy",},
