@@ -7,7 +7,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"enemyBehavior","path":"objects/enemyBehavior/enemyBehavior.yy",},"propertyId":{"name":"enemyDamage","path":"objects/enemyBehavior/enemyBehavior.yy",},"value":"5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"enemyBehavior","path":"objects/enemyBehavior/enemyBehavior.yy",},"propertyId":{"name":"enemyDamage","path":"objects/enemyBehavior/enemyBehavior.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Enemies",
