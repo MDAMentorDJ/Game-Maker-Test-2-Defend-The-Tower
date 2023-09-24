@@ -287,4 +287,12 @@ function createRandomPowerUp(x_offset)
 	/// @DnDArgument : "var_1" "newPowerUp.image_yscale"
 	newPowerUp.image_xscale = 2.8;
 	newPowerUp.image_yscale = 3.2;
+
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 745CB74B
+	/// @DnDParent : 3B6C227A
+	/// @DnDArgument : "function" "newPowerUp.setRarity"
+	/// @DnDArgument : "arg" "random_range(0,100)"
+	newPowerUp.setRarity(random_range(0,100));
 }

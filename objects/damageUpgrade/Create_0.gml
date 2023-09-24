@@ -12,13 +12,9 @@ function applyUpgrade()
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 03DF2AD1
-	/// @DnDApplyTo : {playerTower}
 	/// @DnDParent : 36446DA0
-	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "expr" "upgradeAmount"
 	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "var" "bulletDamage"
-	with(playerTower) {
-	bulletDamage += 1;
-	
-	}
+	/// @DnDArgument : "var" "playerTower.bulletDamage"
+	playerTower.bulletDamage += upgradeAmount;
 }

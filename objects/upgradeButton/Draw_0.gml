@@ -52,6 +52,16 @@ draw_text(x + 0, y + 0, string(upgradeValue) + "");
 /// @DnDSaveInfo : "font" "defaultFont"
 draw_set_font(defaultFont);
 
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 726834CB
+/// @DnDComment : Render the button text
+/// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "125"
+/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "caption" "upgradeRarityText"
+draw_text(x + 0, y + 125, string(upgradeRarityText) + "");
+
 /// @DnDAction : YoYo Games.Drawing.Set_Alpha
 /// @DnDVersion : 1
 /// @DnDHash : 5522DB9F

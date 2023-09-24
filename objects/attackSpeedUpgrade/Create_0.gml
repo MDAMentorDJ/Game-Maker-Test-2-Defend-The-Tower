@@ -12,13 +12,9 @@ function applyUpgrade()
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 58C495C0
-	/// @DnDApplyTo : {playerTower}
 	/// @DnDParent : 32F5EE8E
-	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "expr" "upgradeAmount"
 	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "var" "bulletFireRate"
-	with(playerTower) {
-	bulletFireRate += 1;
-	
-	}
+	/// @DnDArgument : "var" "playerTower.bulletFireRate"
+	playerTower.bulletFireRate += upgradeAmount;
 }
